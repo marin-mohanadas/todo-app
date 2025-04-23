@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TODO APP",
   description: "Keep track all you tasks here!",
+  icons:{
+    icon: 'todo_favicon.ico'
+  }
 };
 
 export default function RootLayout({
