@@ -75,6 +75,12 @@ const TodoApp = () => {
   };
 
   const totalTasks = allTasks.length - checkedIds.size || 0;
+
+  const subHeading =
+    totalTasks === 0
+      ? "Congratulations! You have completed all your tasks!"
+      : `You have ${totalTasks} ${totalTasks === 1 ? "task" : "tasks"} to complete`;
+
   return (
     <div className="container">
       <h2>Your TODO List</h2>
@@ -97,10 +103,7 @@ const TodoApp = () => {
         </button>
       </div>
 
-      <h3>
-        {`You have ${totalTasks}
-        ${totalTasks === 1 ? "task" : "tasks"} to complete`}
-      </h3>
+      <h3>{subHeading}</h3>
 
       <table className="table table-striped">
         <tbody>
