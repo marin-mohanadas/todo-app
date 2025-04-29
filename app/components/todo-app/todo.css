@@ -1,0 +1,78 @@
+/* General reset and base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+
+/* Headings */
+h2,
+h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Flex container for input + button */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Icon-style buttons */
+.icon-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    width: 45px;
+    height: 45px;
+}
+
+.icon-button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.icon-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Inline task control buttons */
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
